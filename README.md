@@ -1,61 +1,6 @@
 
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Charlie the Spaniel's Blog</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fefaf6;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #9c6644;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #d4a373;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .content {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 15px;
-    }
-    .post {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-    }
-    .post h2 {
-      margin-top: 0;
-    }
-    footer {
-      background-color: #9c6644;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Charlie the Spaniel's Blog</h1>
+  
+      <h1>Charlie the Spaniel's Blog</h1>
     <p>Adventures, teddies, and squeaky balls!</p>
   </header>  <nav>
     <a href="#">Home</a>
