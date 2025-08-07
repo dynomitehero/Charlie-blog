@@ -1,7 +1,4 @@
 
-  
-      <h1>Charlie the Spaniel's Blog</h1>
-    <p>Adventures, teddies, and squeaky balls!</p>
   </header>  <nav>
     <a href="#">Home</a>
     <a href="#">Gallery</a>
