@@ -1,5 +1,4 @@
-# Charlie-blog
-A blog about my Spanail Charlie 
+
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
