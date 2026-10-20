@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Charlie: Battle for Sockford - 16-Bit Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="screen-wrapper">
+      <canvas id="gameCanvas" width="320" height="240"></canvas>
+    </div>
+
+    <!-- Mobile Touch Controls Overlay -->
+    <div id="touch-controls">
+      <div id="dpad">
+        <button id="btn-up" class="touch-btn">▲</button>
+        <div class="dpad-middle">
+          <button id="btn-left" class="touch-btn">◀</button>
+          <button id="btn-down" class="touch-btn">▼</button>
+          <button id="btn-right" class="touch-btn">▶</button>
+        </div>
+      </div>
+      <div id="action-buttons">
+        <button id="btn-a" class="touch-btn act-btn">A<br><small>BARK</small></button>
+        <button id="btn-b" class="touch-btn act-btn">B<br><small>JUMP</small></button>
+        <button id="btn-c" class="touch-btn act-btn">C<br><small>DASH</small></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
