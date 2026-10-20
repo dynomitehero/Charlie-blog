@@ -1,0 +1,134 @@
+/* Charlie: Battle for Sockford - 16-bit Retro Presentation CSS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+body {
+  background-color: #111118;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 960px;
+  padding: 10px;
+}
+
+/* Strict 4:3 Aspect Ratio Container */
+#screen-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  /* 4:3 aspect ratio enforcement */
+  aspect-ratio: 4 / 3;
+  background-color: #000000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 10px #f08020;
+  border: 4px solid #332211;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas#gameCanvas {
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+}
+
+/* Touch Controls Layout for Mobile */
+#touch-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+#dpad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dpad-middle {
+  display: flex;
+  gap: 5px;
+}
+
+.touch-btn {
+  background: linear-gradient(145deg, #3a3a4c, #222230);
+  color: #fff;
+  border: 2px solid #555566;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.touch-btn:active {
+  background: #f08020;
+  color: #000;
+  transform: translateY(2px);
+}
+
+#action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.act-btn {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(145deg, #d84040, #902020);
+}
+
+#btn-b {
+  background: linear-gradient(145deg, #40d840, #209020);
+}
+
+#btn-c {
+  background: linear-gradient(145deg, #4080d8, #204090);
+}
+
+.act-btn small {
+  font-size: 8px;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  /* Hide touch controls on desktop if desired, or keep as clickable UI */
+  #touch-controls {
+    display: flex;
+  }
+}
